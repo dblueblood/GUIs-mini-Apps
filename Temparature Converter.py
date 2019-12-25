@@ -47,7 +47,6 @@ def tofahr(cel):
     return (cel - 32) * 0.56
 
 
-
 """CLEAR BUTTON"""
 def clear():
     # clear entries function
@@ -59,13 +58,13 @@ def clear():
 """MAIN WINDOW FOR TEMPERATURE CONVERTER"""
 TC = Tk()
 TC.title("Temperature converter")
-TC.configure(bg="black")
+TC.configure(bg="black", relief=SUNKEN, borderwidth=8)
 TC.geometry("350x100")
 TC.columnconfigure(1, weight=1)
 TC.rowconfigure(1, weight=1)
 
 """LABELS SETUP & GRID"""
-# Labels for Celsius entry
+# Labels for Celsius entry.....
 cellabel = Label(TC, text="CELSIUS", bg="black", foreground="blue")
 cellabel.grid(row=0, column=0)
 # Labels for Fahrenheit entry
@@ -76,12 +75,12 @@ fahrlabel.grid(row=1, column=0)
 # Storing user entry for Fahrenheit input
 fbtext = StringVar()
 fbtext.set(" ")
-fahrbox = Entry(TC, textvariable=fbtext)
+fahrbox = Entry(TC, textvariable=fbtext, borderwidth=5, relief=SUNKEN)
 fahrbox.grid(row=0, column=1)
 # Storing user entry for Celsius input
 cbtext = StringVar()
 cbtext.set(" ")
-celbox = Entry(TC, textvariable=cbtext)
+celbox = Entry(TC, textvariable=cbtext, borderwidth=5, relief=SUNKEN)
 celbox.grid(row=1, column=1)
 
 """BUTTONS GRID"""
