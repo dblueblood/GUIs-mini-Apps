@@ -13,7 +13,7 @@ def ESC():
     ESC1 = os.startfile(path)
 
 
-"""MAIN WINDOW FOR TEMPERATURE CONVERTER"""
+"""MAIN WINDOW FOR SERVICE LOGS TEMPLATE"""
 TC = Tk()
 TC.title("SERVICE REQUEST TEMPLATES")
 TC.configure(bg="GREY", relief=SUNKEN, borderwidth=3)
